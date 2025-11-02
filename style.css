@@ -1,3 +1,10 @@
+:root {
+    --white-color: #f9fafb;
+    --black-color: #000000;
+    --blue-color: #4f46e5;
+    --light-purple-color: #aa98e4;
+}
+
 @font-face {
     font-family: "Norse Bold";
     src: url("./font/Norse-Bold.otf") format("opentype");
@@ -60,11 +67,52 @@ body {
 }
 
 .begin-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    font-weight: 600;
+    padding: 25px 30px;
     max-width: 60ch;
+    background-color: var(--white-color);
+}
+
+.right-panel form {
+    flex: 1;
+}
+
+form .form-wrapper {
+    background-color: var(--white-color);
+    padding-left: 25px;
 }
 
 form .form-row {
     display: flex;
     gap: 50px;
     padding-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+form input {
+    display: block;
+    padding: 5px;
+    border: 1px solid var(--black-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: var(--blue-color);
+    box-shadow: 2px 2px 5px 0;
+}
+
+form button {
+    color: var(--white-color);
+    background-color: var(--light-purple-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
 }
