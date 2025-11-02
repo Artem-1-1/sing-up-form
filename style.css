@@ -62,3 +62,9 @@ body {
 .begin-text {
     max-width: 60ch;
 }
+
+form .form-row {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}
