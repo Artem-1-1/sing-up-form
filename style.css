@@ -37,24 +37,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white-color);
+    margin-top: 250px;
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
 .logo-section img {
-    height: 150px;
+    height: 125px;
     margin-right: 10px;
 }
 
 .logo-section h1 {
     font-family: "Norse Bold", sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .credit-section {
     font-size: 0.8rem;
     margin-top: auto;
     text-align: center;
-    color: white;
+    color: var(--white-color);
     padding-bottom: 10px;
 }
 
@@ -75,23 +77,34 @@ body {
     justify-content: flex-end;
     font-weight: 600;
     padding: 25px 30px;
-    max-width: 60ch;
+    max-width: 70ch;
     background-color: var(--white-color);
+}
+
+.begin-text p {
+    margin-left: 25px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
 }
 
 .right-panel form {
     flex: 1;
 }
 
+form h2 {
+    margin-left: 25px;
+}
+
 form .form-wrapper {
     background-color: var(--white-color);
     padding-left: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form .form-row {
     display: flex;
     gap: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 label {
@@ -101,6 +114,7 @@ label {
 form input {
     display: block;
     padding: 5px;
+    width: 250px;
     border: 1px solid var(--black-color);
     border-radius: 3px;
     outline: none;
@@ -117,7 +131,11 @@ form input:focus {
     box-shadow: 2px 2px 5px 0;
 }
 
-form button {
+.button-row {
+    padding: 25px;
+}
+
+.button-row button {
     color: var(--white-color);
     background-color: var(--light-purple-color);
     border: none;
@@ -132,7 +150,6 @@ form button {
 
 .login-section p {
     margin-top: 0;
-    padding-left: 25px;
     font-size: 1rem;
 }
 
